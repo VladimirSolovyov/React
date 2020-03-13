@@ -1,35 +1,34 @@
-.content {
-  grid-area: c;
-  background-color: #61dafb
-}
+/*.content {*/
+/*  grid-area: c;*/
+/*  background-color: #61dafb*/
+/*}*/
 
 .contentImg {
-  width: 100%;
-  height:200px;
+    width: 100%;
+    height: 200px;
 }
 
 .item {
-  color: blue;
-  font-style: italic;
+    color: blue;
+    font-style: italic;
 }
 
 
 .info {
-  margin: 10px;
-  display: grid;
-  width: 800px;
+    margin: 10px;
+    display: grid;
+    width: 800px;
 
-  grid-template-areas:
-    "ava date";
-  grid-template-rows: 120px 1fr;
-  grid-template-columns: 2fr 10fr;
-  /* grid-gap: 10px; */
+    grid-template-areas: "ava date";
+    grid-template-rows: 120px 1fr;
+    grid-template-columns: 2fr 10fr;
+    /* grid-gap: 10px; */
 }
 
 .avatar {
-  grid-area: ava;
+    grid-area: ava;
 }
 
 .date {
-  grid-area: date;
+    grid-area: date;
 }
