@@ -11,6 +11,7 @@ const Mypost = () => {
           <div className={s.posts}>
             <Post />
             <Post />
+            <Post />
           </div>
       </div>
   );
