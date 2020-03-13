@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Profile.module.css";
+import Mypost from "./Mypost/Mypost";
 
 const Profile = () => {
   return (
@@ -37,15 +38,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div className={s.newPost}>
-        <h3>My post</h3>
-        <input type="text" size="40" placeholder="New post..." />
-        <div className={s.send_btn}>Send</div>
-          <div className={s.posts}>
-            <div className={s.item}>Post1</div>
-            <div className={s.item}>Post2</div>
-          </div>
-      </div>
+      <Mypost />
     </div>
   );
 };
