@@ -2,3 +2,8 @@
   color: blue;
   font-style: italic;
 }
+
+.like img {
+  width:20px;
+  height:20px;
+}

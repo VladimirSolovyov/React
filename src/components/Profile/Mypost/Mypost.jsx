@@ -9,9 +9,8 @@ const Mypost = () => {
         <input type="text" size="40" placeholder="New post..." />
         <div className={s.send_btn}>Send</div>
           <div className={s.posts}>
-            <Post />
-            <Post />
-            <Post />
+            <Post message='Hi, how are you?' countLike='10'/>
+            <Post message="It's my first post" countLike='18'/>
           </div>
       </div>
   );
