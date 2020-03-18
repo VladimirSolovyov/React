@@ -8,14 +8,15 @@ const Mypost = () => {
         {id:2,message:'It\'s my first post',countLike:18},
     ]
 
+    let postElements = postData.map(p => <Post message={p.message} countLike={p.countLike} />);
+
   return (
       <div className={s.newPost}>
         <h3>My post</h3>
         <input type="text" size="40" placeholder="New post..." />
         <div className={s.send_btn}>Send</div>
           <div className={s.posts}>
-            <Post message={postData[0].message} countLike={postData[0].countLike}/>
-            <Post message={postData[1].message} countLike={postData[1].countLike}/>
+            { postElements  }
           </div>
       </div>
   );

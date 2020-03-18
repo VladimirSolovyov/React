@@ -13,5 +13,7 @@ Keys | Action
 Ctrl+Alt+L | Text alignment
 Alt + => | Switch between open files
 Ctrl+Alt+ <= | Switch to previous action
+Ctrl+shift+. | Add comment 
+shift+f6 | Rename all occurrences
 
-### Next lesson 25
+### Next lesson 26
