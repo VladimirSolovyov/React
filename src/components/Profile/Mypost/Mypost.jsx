@@ -3,7 +3,7 @@ import s from "./Mypost.module.css";
 import Post from "./Post/Post";
 
 const Mypost = (props) => {
-    let postElements = props.dataPost.map(p => <Post message={p.message} countLike={p.countLike} />);
+    let postElements = props.posts.map(p => <Post message={p.message} countLike={p.countLike} />);
 
   return (
       <div className={s.newPost}>
