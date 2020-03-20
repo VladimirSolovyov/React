@@ -17,4 +17,4 @@ Ctrl+shift+. | Add comment
 shift+f6 | Rename all occurrences
 double shift  | Show all files project
 
-### Next lesson 26
+### Next lesson 27

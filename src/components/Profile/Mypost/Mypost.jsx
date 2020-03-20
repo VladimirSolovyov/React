@@ -2,13 +2,8 @@ import React from "react";
 import s from "./Mypost.module.css";
 import Post from "./Post/Post";
 
-const Mypost = () => {
-    let postData = [
-        {id:1,message:'Hi, how are you?',countLike:10},
-        {id:2,message:'It\'s my first post',countLike:18},
-    ]
-
-    let postElements = postData.map(p => <Post message={p.message} countLike={p.countLike} />);
+const Mypost = (props) => {
+    let postElements = props.dataPost.map(p => <Post message={p.message} countLike={p.countLike} />);
 
   return (
       <div className={s.newPost}>
