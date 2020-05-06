@@ -2,7 +2,10 @@ import React from 'react';
 import s from './../Dialogs.module.css';
 
 const Message = (props) => {
-    return <div className={s.message}>{props.message}</div>
+    let alingMsg = (props.who)? s.youText : s.friendText;
+    return (
+        <div className={s.message + ' ' +  alingMsg}>{props.message}</div>
+    );
 }
 
 export default Message;

@@ -1,0 +1,28 @@
+.friends {
+    font-weight: bolder;
+    font-size: 16px;
+    text-align: center;
+    color:white;
+    margin-top: 60px;
+}
+.title {
+    margin-bottom: 15px;
+}
+.friendItem {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.icoImg {
+    background-color: yellow;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+.block {
+    /*text-align: center;*/
+}
