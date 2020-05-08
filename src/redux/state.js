@@ -22,14 +22,23 @@ let state = {
             {id:6,name:'Son',ico_img:'mother_ico.png'},
         ]
     },
-    friendsItem:{
+    sidebar:{
         friends:[
             {id:1, name: 'Igor'},
             {id:2, name: 'Oleg'},
             {id:3, name: 'Alex'},
         ]
-    },
-    sidebar: {}
+    }
 };
+
+export let addPost = (newPost) => {
+    let newObjPost = {
+        id:state.profilePage.posts.length+1,
+        message:newPost,
+        countLike:0
+    }
+    debugger;
+    state.profilePage.posts.push(newObjPost);
+}
 
 export default state;
