@@ -1,3 +1,5 @@
+import {renderEntireTree} from "../render";
+
 let state = {
     profilePage:{
         posts:[
@@ -36,9 +38,10 @@ export let addPost = (newPost) => {
         id:state.profilePage.posts.length+1,
         message:newPost,
         countLike:0
-    }
-    debugger;
+    };
+
     state.profilePage.posts.push(newObjPost);
-}
+    renderEntireTree(state);
+};
 
 export default state;
