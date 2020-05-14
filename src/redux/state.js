@@ -23,7 +23,8 @@ let state = {
             {id:4,name:'Brother',ico_img:'mother_ico.png'},
             {id:5,name:'Sister',ico_img:'mother_ico.png'},
             {id:6,name:'Son',ico_img:'mother_ico.png'},
-        ]
+        ],
+        newMessageText: "enter message"
     },
     sidebar:{
         friends:[
@@ -42,11 +43,25 @@ export let addPost = () => {
     };
     state.profilePage.posts.push(newObjPost);
     editPost('');
-    renderEntireTree(state);
 };
 
 export  let editPost = (editText) => {
     state.profilePage.newPostText = editText;
+    renderEntireTree(state);
+}
+
+export  let addMessage = () => {
+    let newObjMessage = {
+        id:state.dialogsPage.messages.length + 1,
+        message:state.dialogsPage.newMessageText,
+        msgYou:true
+    };
+    state.dialogsPage.messages.push(newObjMessage);
+    editMessage('');
+}
+
+export let editMessage = (editText) => {
+    state.dialogsPage.newMessageText = editText;
     renderEntireTree(state);
 }
 

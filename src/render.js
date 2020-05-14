@@ -2,10 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from "./App";
-import {addPost} from "./redux/state";
-import {editPost} from "./redux/state";
+import {addMessage, addPost, editMessage, editPost} from "./redux/state";
 
 
 export  let renderEntireTree = (state) => {
-    ReactDOM.render(<App appState={state} addPost={addPost} editPost={editPost}/>, document.getElementById('root'));
+    ReactDOM.render(<App appState={state} addPost={addPost} editPost={editPost} addMessage={addMessage} editMessage={editMessage}/>, document.getElementById('root'));
 };
